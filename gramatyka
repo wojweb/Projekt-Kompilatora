@@ -1,0 +1,19 @@
+program -> DECLARE declarations BEGIN commands END
+
+declarations    -> declarations, pidentifier
+                | pidentifier
+
+commands        -> commands command
+                | command
+
+command         -> pidentifier ASSIGN expression;
+                | READ pidentifier;
+                | WRITE value;
+
+
+expression      -> value
+                | value PLUS value
+                | value MINUS value
+
+value           -> num
+                | pidentifier

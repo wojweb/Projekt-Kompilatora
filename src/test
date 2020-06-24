@@ -1,0 +1,6 @@
+DECLARE
+    a, b, c
+BEGIN
+    a ASSIGN 100000 TIMES 100000;
+    WRITE a;
+END
